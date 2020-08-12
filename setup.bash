@@ -5,10 +5,19 @@ mkdir -p ~/.vim/bundle/
 mkdir -p ~/.vim/autoload/
 
 plugins=(
-https://github.com/Raimondi/delimitMate.git 
-https://github.com/yegappan/mru.git
-https://github.com/preservim/nerdtree.git
-git://github.com/altercation/vim-colors-solarized.git
+Raimondi/delimitMate.git
+yegappan/mru.git
+preservim/nerdtree.git
+WolfgangMehner/c-support.git
+#inkarkat/vim-ConflictMotions.git
+vim-scripts/Conque-GDB.git
+inkarkat/vim-ingo-library.git
+Shougo/neocomplete.vim.git
+vim-syntastic/syntastic.git
+ntpeters/vim-better-whitespace.git
+altercation/vim-colors-solarized.git
+mptre/vim-printf.git
+thinca/vim-quickrun.git
 )
 
 if [ ! -f  /home/$USER/.vim/autoload/ ]; then
@@ -30,7 +39,7 @@ for f in ${plugins[@]};
 do
 	folder=${f##*/}
 	if [ ! -d  ${folder%.*} ]; then
-		git clone $f
+		git clone https://github.com/$f
 	fi
 done
 popd
