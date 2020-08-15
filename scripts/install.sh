@@ -1,10 +1,12 @@
 #!/bin/bash
 set -eux
 
+DIRNAME=$(dirname {$(basename $0)})
+FILES=$DIRNAME/files
 mkdir -p ~/.vim/bundle/
 mkdir -p ~/.vim/autoload/
-mapfile  -t plugins < plugins.txt
-mapfile  -t vimrc   < vimrc_settings.txt
+mapfile  -t plugins < $FILES/plugins.conf
+mapfile  -t vimrc   < $FILES/vimrc_settings.conf
 
 if [ ! -f  /home/$USER/.vim/autoload/ ]; then
 	wget https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim -P ~/.vim/autoload/

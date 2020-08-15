@@ -4,6 +4,10 @@ would help you to convert your vim into an IDE
 This is a collection of several plugins
 available in github.
 
+## Installation
+Please read the note provided at the bottom
+Run `scripts/install.sh`
+
 ### files
 + `plugins.conf`
 Contains all the necessary plugins to be configured
