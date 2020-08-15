@@ -17,7 +17,7 @@ Add your custom settings here
 ### scripts
 `scripts/install.sh` installs the configured plugins
 and vimrc settings
-######Note
+###### Note
 The script flushes your vimrc and configures with the
 settings provided in the `vimrc_settings.conf` file.
 Make sure you take a backup or append the existing settings
