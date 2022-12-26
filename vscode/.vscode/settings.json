@@ -1,0 +1,89 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "C_Cpp.errorSquiggles": "enabled",
+    "workbench.statusBar.feedback.visible": false,
+    "editor.minimap.enabled": false,
+    "workbench.colorCustomizations": {
+        "terminal.foreground": "#00FD61",
+        "terminal.background": "#383737"
+    },
+    "python.analysis.include": [
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.autoSearchPaths": true,
+    "explorer.sortOrder": "modified",
+    "files.trimFinalNewlines": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 5000,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/tmp/**": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/dist/**": true,
+        "**/log/**": true,
+        "**/logs/**": true,
+        "**/.fdk/**": true,
+        "**/Cs/**": true,
+        "**/plantuml/**": true,
+        "**/*.cs": true,
+        "**/*.sln": true
+    },
+    "files.exclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/tmp/**": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/dist/**": true,
+        "**/log/**": true,
+        "**/.fdk/**": true,
+        "**/plantuml/**": true,
+        "**/*.cs": true,
+        "**/*.sln": true
+    },
+    "search.exclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/tmp/**": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/dist/**": true,
+        "**/log/**": true,
+        "**/build/**": true,
+        "**/plantuml/**": true,
+        "**/*.cs": true,
+        "**/*.sln": true
+    },
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-c"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "python.formatting.provider": "yapf",
+    "python.analysis.typeCheckingMode": "basic"
+    
+}
