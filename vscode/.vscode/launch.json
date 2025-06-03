@@ -1,0 +1,46 @@
+{
+    "version": "0.2.0",
+    "inputs": [
+        {
+          "id": "appName",
+          "description": "Select remote application to debug",
+          "type": "pickString",
+          "options": [
+            "TestApp"
+          ]
+        }
+    ],
+    "configurations": [
+        {
+            "name": "Remote App attach",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "${workspaceFolder}/build/local/bin/${input:appName}",
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "targetArchitecture": "x86_64",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "miDebuggerArgs": "-iex 'source ${env:HOME}/.gdbinit'",
+            "processId": "${command:pickRemoteProcess}",
+            "pipeTransport": {
+                "pipeCwd": "",
+                "pipeProgram": "ssh",
+                "pipeArgs": [
+                    "-T",
+                    "${env:USER}@${env:MY_SIM_MACHINE}"
+                ],
+                "debuggerPath": "/usr/bin/gdb"
+            },
+            "sourceFileMap": {
+                "build/local/bin/my_source": "${workspaceFolder}/my_source"
+            }
+
+        }
+    ]
+}
