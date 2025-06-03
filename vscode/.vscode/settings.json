@@ -3,6 +3,14 @@
     "C_Cpp.errorSquiggles": "enabled",
     "workbench.statusBar.feedback.visible": false,
     "editor.minimap.enabled": false,
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.formatOnType": true,
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "editor.fontLigatures": true,
     "workbench.colorCustomizations": {
         "terminal.foreground": "#00FD61",
         "terminal.background": "#383737"
@@ -14,7 +22,7 @@
     "explorer.sortOrder": "modified",
     "files.trimFinalNewlines": true,
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 5000,
+    "files.autoSaveDelay": 3000,
     "files.watcherExclude": {
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
@@ -34,7 +42,9 @@
         "**/Cs/**": true,
         "**/plantuml/**": true,
         "**/*.cs": true,
-        "**/*.sln": true
+        "**/*.sln": true,
+        "**/.vcxproj**": true,
+        "**/out/**": true
     },
     "files.exclude": {
         "**/.git/objects/**": true,
@@ -53,7 +63,9 @@
         "**/.fdk/**": true,
         "**/plantuml/**": true,
         "**/*.cs": true,
-        "**/*.sln": true
+        "**/*.sln": true,
+        "**/.vcxproj**": true,
+        "**/out/**": true
     },
     "search.exclude": {
         "**/.git/objects/**": true,
@@ -72,7 +84,9 @@
         "**/build/**": true,
         "**/plantuml/**": true,
         "**/*.cs": true,
-        "**/*.sln": true
+        "**/*.sln": true,
+        "**/.vcxproj**": true,
+        "**/out/**": true
     },
     "terminal.integrated.profiles.linux": {
         "bash": {
@@ -83,7 +97,18 @@
         }
     },
     "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.tabs.defaultIcon": "person",
+    "terminal.integrated.tabs.defaultColor": "terminal.ansiWhite",
+    "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
     "python.formatting.provider": "yapf",
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/../**"
+    ],
+    "python.analysis.userFileIndexingLimit": 15000,
+    "clangd.path": "/usr/bin/clangd",
+    "clangd.enable": true,
+    "clangd.autoComplete": true,
+    "clangd.indexing": true
     
 }
