@@ -1,0 +1,30 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=827846
+	// for the documentation about the extensions.json format
+	"recommendations": [
+		"ms-vscode-remote.remote-ssh-edit",
+		"ms-vscode-remote.vscode-remote-extensionpack",
+		"llvm-vs-code-extensions.vscode-clangd",
+		"vadimcn.vscode-lldb",
+		"sidp.strict-whitespace",
+		"jkiviluoto.tws",
+    "ms-python.python",
+    "donjayamanne.python-extension-pack",
+    "KevinRose.vsc-python-indent",
+    "ms-python.vscode-pylance",
+    "ms-python.debugpy",
+    "qhoekman.language-plantuml",
+    "jebbs.plantuml",
+    "shaharkazaz.git-merger",
+    "donjayamanne.githistory",
+    "mhutchie.git-graph",
+    "donjayamanne.git-extension-pack",
+    "waderyan.gitblame",
+    "cschlosser.doxdocgen",
+    "CS128.cs128-clang-tidy",
+    "NathanJ.cpp-tools-plugin",
+    "nguyenngoclong.terminal-keeper",
+    "christian-kohler.path-intellisense",
+    "VisualStudioExptTeam.vscodeintellicode"
+	]
+}
