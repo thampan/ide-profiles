@@ -1,0 +1,11 @@
+[user]
+	name = MyName
+	email = me@domain.com
+[core]
+	editor = vim
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = /usr/bin/kdiff3
+[mergetool]
+	prompt = true
